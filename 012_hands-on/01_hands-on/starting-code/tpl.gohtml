@@ -8,7 +8,16 @@
 
 {{range .}}
 
-<!-- PUT YOUR CODE HERE TO SHOW THE DATA-->
+    <h2>{{.AcaYear}}</h2>
+    <h3>Fall<h3>
+    {{range .Fall.Courses}}
+        <p>{{.Number}} {{.Name}} {{.Units}}</p>
+    {{end}}
+
+    <h3>Spring<h3>
+    {{range .Spring.Courses}}
+        <p>{{.Number}} {{.Name}} {{.Units}}</p>
+    {{end}}
 
 {{end}}
 
